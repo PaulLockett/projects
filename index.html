@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tooltip</title>
+  <title>Tooltip Below Text</title>
   <style>
     /* Style for the tooltip container */
     .tooltip {
@@ -23,7 +23,7 @@
       padding: 5px 0;
       position: absolute;
       z-index: 1;
-      bottom: 125%; /* Position the tooltip above the text */
+      top: 100%; /* Position the tooltip below the text */
       left: 50%;
       margin-left: -60px;
       opacity: 0;
@@ -34,12 +34,12 @@
     .tooltip .tooltiptext::after {
       content: "";
       position: absolute;
-      top: 100%; /* Position the arrow at the bottom */
+      bottom: 100%; /* Position the arrow at the top */
       left: 50%;
       margin-left: -5px;
       border-width: 5px;
       border-style: solid;
-      border-color: #555 transparent transparent transparent;
+      border-color: transparent transparent #555 transparent;
     }
 
     /* Show the tooltip text when hovering */
